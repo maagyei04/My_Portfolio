@@ -14,7 +14,7 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 500),
       builder: (context, value, child) {
         return Text(
-          'I\'m capable of creating excellent websites, web apps and ${Responsive.isLargeMobile(context) ? '\n' : ''}mobile apps, handling every step from ${!Responsive.isLargeMobile(context) ? '\n' : ''}concept to  ${!Responsive.isLargeMobile(context) ? '\n' : ''} ${Responsive.isLargeMobile(context) ? '\n' : ''}deployment. Feel free to go through the websites using ${Responsive.isLargeMobile(context) ? '\n' : ''}the above Navbar. NB: Built this website using Flutter.',
+          'I\'m capable of creating excellent websites, ${Responsive.isMobile(context) ? '\n' : ''}web apps and ${Responsive.isLargeMobile(context) ? '\n' : ''}mobile apps, ${!Responsive.isLargeMobile(context) ? '\n' : ''}handling every step from concept${Responsive.isMobile(context) ? '\n' : ''} to deployment.${!Responsive.isLargeMobile(context) ? '\n' : ''}${Responsive.isLargeMobile(context) ? '\n' : ''}Feel free to go through the websites using ${Responsive.isLargeMobile(context) ? '\n' : ''}the above Navbar. ${!Responsive.isLargeMobile(context) ? '\n' : ''}NB: Built this website using Flutter.',
           maxLines: 4,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),

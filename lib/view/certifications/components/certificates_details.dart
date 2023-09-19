@@ -72,13 +72,13 @@ class CertificateStack extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30),
                         gradient: LinearGradient(
                             colors: [
-                              Colors.pink,
+                              Colors.yellow,
                               Colors.blue.shade900,
                             ]
                         ),
                         boxShadow:const [
                           BoxShadow(color: Colors.blue,offset: Offset(0, -1),blurRadius: 5),
-                          BoxShadow(color: Colors.red,offset: Offset(0, 1),blurRadius: 5),
+                          BoxShadow(color: Colors.green,offset: Offset(0, 1),blurRadius: 5),
                         ]
                     ),
                     child: const Row(

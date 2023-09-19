@@ -4,6 +4,7 @@ import 'package:flutter_portfolio/view/intro/introduction.dart';
 import 'package:flutter_portfolio/view/main/main_view.dart';
 import 'package:flutter_portfolio/view/projects/project_view.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
