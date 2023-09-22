@@ -14,8 +14,8 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 500),
       builder: (context, value, child) {
         return Text(
-          'I\'m capable of creating excellent websites, ${Responsive.isMobile(context) ? '\n' : ''}web apps and ${Responsive.isLargeMobile(context) ? '\n' : ''}mobile apps, ${!Responsive.isLargeMobile(context) ? '\n' : ''}handling every step from concept${Responsive.isMobile(context) ? '\n' : ''} to deployment.${!Responsive.isLargeMobile(context) ? '\n' : ''}${Responsive.isLargeMobile(context) ? '\n' : ''}Feel free to go through the websites using ${Responsive.isLargeMobile(context) ? '\n' : ''}the above Navbar. ${!Responsive.isLargeMobile(context) ? '\n' : ''}NB: Built this website using Flutter.',
-          maxLines: 4,
+          'I\'m capable of creating excellent websites, ${Responsive.isMobile(context) ? '\n' : ''}web apps and ${Responsive.isLargeMobile(context) ? '\n' : ''}mobile apps, ${!Responsive.isLargeMobile(context) ? '\n' : ''}handling every step from${Responsive.isMobile(context) ? '\n' : ''} concept to deployment.${!Responsive.isLargeMobile(context) ? '\n' : ''}${Responsive.isLargeMobile(context) ? '\n' : ''}Feel free to go through the websites using ${Responsive.isLargeMobile(context) ? '\n' : ''}the above Navbar. ${!Responsive.isLargeMobile(context) ? '\n' : ''}',
+          maxLines: 6,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
         );

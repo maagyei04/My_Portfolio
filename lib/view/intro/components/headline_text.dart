@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../view model/responsive.dart';
 
 class MyPortfolioText extends StatelessWidget {
   const MyPortfolioText({super.key, required this.start, required this.end});
@@ -11,7 +12,7 @@ class MyPortfolioText extends StatelessWidget {
         tween: Tween(begin: start, end: end),
         duration: const Duration(milliseconds: 200),
         builder: (context, value, child) {
-          return Text('My Personal Portfolio',
+          return Text('My Personal${Responsive.isMobile(context) ? '\n' : ''} Portfolio',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
